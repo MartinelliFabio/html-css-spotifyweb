@@ -21,6 +21,7 @@ body {
     --text-white: rgba(255, 255, 255, 1);
     --text-grey: rgba(113, 113, 113, 1);
     --lime-green: rgba(173, 255, 47, 1);
+    --gray-bar: #c1c1c1;
     --subtitle: 0.8rem;
     --title: 1.5rem;
     --title-card: 1.1rem;
@@ -48,6 +49,10 @@ body {
     flex-flow: column wrap;
 }
 
+.flex-row {
+    flex-flow: row nowrap;
+}
+
 .align-center {
     align-items: center;
 }
@@ -62,6 +67,10 @@ body {
 
 .justify-end {
     justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
 }
 
 li {
@@ -123,17 +132,6 @@ h2 {
     overflow-y: auto;
 }
 
-/* ! Footer */
-.playbar {
-    width: 100%;
-    height: 95px;
-    background-color: var(--dark-grey);
-    position: fixed;
-    bottom: 0;
-    z-index: 9999;
-}
-
-
 /* ! Barra Laterale */
 aside {
     width: 250px;
@@ -186,16 +184,14 @@ aside {
     width: 100%;
     height: 60%;
     padding-top: 1rem;
-    overflow-y: auto;
-}
-
-.list {
     line-height: 2rem;
+    overflow-y: auto;
 }
 
 .user {
     position: fixed;
-    bottom: 105px;
+    bottom: 109px;
+    background-color: var(--nero-100);
 }
 
 .user p {
@@ -211,7 +207,7 @@ aside {
 }
 
 hr {
-    width: 161%;
+    width: 134%;
     border: 0.5px solid var(--text-grey);
 }
 
@@ -290,7 +286,7 @@ ul li {
     padding-bottom: 1rem;
 }
 
-.fa-circle-play {
+.container-playlist .fa-circle-play {
     display: none;
     position: absolute;
     top: 50%;
@@ -330,6 +326,110 @@ ul li {
 
 .round-img {
     border-radius: 50%;
+}
+
+/* ! CSS Sezione "Footer" */
+.playbar {
+    width: 100%;
+    height: 100px;
+    background-color: var(--dark-grey);
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    padding: 0.7rem;
+}
+
+.container-footer {
+    width: 100%;
+}
+
+/* ! CSS del div della parte sinistra, con l'immagine e il nome del brano */
+.playbar img {
+    height: 3.5rem;
+}
+
+.song-name {
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.icons-brano {
+    padding-left: 3rem;
+}
+
+.icons-brano i {
+    padding-right: 1.5rem;
+}
+
+/* ! CSS del div della parte centrale, con il lettore musicale */
+.music-player {
+    width: 33.33%;
+}
+
+.music-player .fa-circle-play {
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.music-player .fa-forward {
+    padding-right: 1.5rem;
+}
+
+.music-player .fa-backward {
+    padding-left: 1.5rem;
+}
+
+.icon-player {
+    padding-bottom: 1rem;
+}
+
+.play-bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--text-grey);
+    border-radius: 1rem;
+}
+
+.bar {
+    width: 15%;
+    height: 4px;
+    background-color: var(--gray-bar);
+    border-radius: 1rem;
+}
+
+.first-min {
+    padding-right: 1rem;
+}
+
+.second-min {
+    padding-left: 1rem;
+}
+
+/* ! CSS del div della parte destra, con le icone e la barra del volume */
+.fa-display {
+    padding: 0 1rem;
+}
+
+.fa-volume-high {
+    padding-right: 1rem;
+}
+
+.volume {
+    width: 15%;
+}
+
+.container-volume-bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--text-grey);
+    border-radius: 1rem;
+}
+
+.volume-bar {
+    width: 30%;
+    height: 4px;
+    background-color: var(--gray-bar);
+    border-radius: 1rem;
 }
 
 /* ! CSS degli Hover */
