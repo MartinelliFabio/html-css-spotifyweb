@@ -207,7 +207,7 @@ aside {
 }
 
 hr {
-    width: 134%;
+    width: 150%;
     border: 0.5px solid var(--text-grey);
 }
 
@@ -244,6 +244,7 @@ header nav {
 }
 
 .btn {
+    display: block;
     text-decoration: none;
     color: var(--text-white);
     padding: 1rem 3rem;
@@ -348,7 +349,7 @@ ul li {
     height: 3.5rem;
 }
 
-.song-name {
+.song {
     justify-content: center;
     padding-left: 1rem;
 }
@@ -364,6 +365,7 @@ ul li {
 /* ! CSS del div della parte centrale, con il lettore musicale */
 .music-player {
     width: 33.33%;
+    position: relative;
 }
 
 .music-player .fa-circle-play {
@@ -395,6 +397,7 @@ ul li {
     height: 4px;
     background-color: var(--gray-bar);
     border-radius: 1rem;
+    position: relative;
 }
 
 .first-min {
@@ -423,6 +426,7 @@ ul li {
     width: 100%;
     background-color: var(--text-grey);
     border-radius: 1rem;
+    position: relative;
 }
 
 .volume-bar {
@@ -430,13 +434,39 @@ ul li {
     height: 4px;
     background-color: var(--gray-bar);
     border-radius: 1rem;
+    position: absolute;
+}
+
+.dot {
+    display: none;
+    background-color: var(--text-white);
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: 26%;
+    bottom: -3px;
+    z-index: 4;
+}
+
+.dot-play {
+    display: none;
+    background-color: var(--text-white);
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    left: 19%;
+    bottom: 2.5px;
+    z-index: 4;
 }
 
 /* ! CSS degli Hover */
+
+/* ! CSS Hover del bottone nella Nav (Header) */
 header nav a:hover {
     transform: scale(1.1);
 }
 
+/* ! CSS Hover delle liste nell' inner-content */
 .inner-content nav ul li a:hover {
     color: var(--text-white);
 }
@@ -447,4 +477,44 @@ header nav a:hover {
 
 .col:hover img {
     filter: opacity(60%);
+}
+
+/* ! CSS Hover dei vari elementi nella barra (Aside) */
+aside a:hover {
+    color: var(--text-white);
+}
+
+.user a:hover {
+    color: var(--text-white);
+}
+
+/* ! CSS Hover dei vari elementi nel "Footer" */
+.song-name:hover {
+    text-decoration: underline;
+    color: var(--text-white);
+}
+
+.icons-brano a:hover {
+    color: var(--text-white);
+}
+
+.music-player .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
+.play-bar:hover .bar {
+    background-color: var(--lime-green);
+}
+
+.play-bar:hover .dot-play{
+    display: block;
+}
+
+.container-volume-bar:hover .volume-bar {
+    background-color: var(--lime-green);
+}
+
+.container-volume-bar:hover .dot {
+    display: block;
+    cursor: pointer;
 }

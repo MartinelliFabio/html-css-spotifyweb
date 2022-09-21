@@ -22,20 +22,20 @@
                 <div class="d-flex flex-column align-start navigation">
                     <div class="d-flex home align-center text-bold text-subtitle">
                         <img src="img/home.svg" alt="HomePage" class="sub-logo">
-                        <span>Home</span>
+                        <span><a href="">Home</a></span>
                     </div>
                     <div class="d-flex home align-center text-bold text-subtitle">
                         <img src="img/search.svg" alt="Cerca" class="sub-logo">
-                        <span>Cerca</span>
+                        <span><a href="">Cerca</a></span>
                     </div>
                     <div class="d-flex home align-center text-bold text-subtitle">
                         <img src="img/libreria.svg" alt="La Tua Libreria" class="sub-logo">
-                        <span>La tua libreria</span>
+                        <span><a href="">La tua libreria</a></span>
                     </div>
                 </div>
                 <div class="playlist">
                     <h3 class="text-white text-up text-card">Playlist</h3>
-                    <span class="d-flex align-center text-gray text-bold"><i class="fa-solid fa-square-plus"></i>Crea Playlist</span>
+                    <span class="d-flex text-gray text-bold"><a href="" class="d-flex align-center"><i class="fa-solid fa-square-plus"></i>Crea Playlist</a></span>
                 </div>
                 <div class="list text-bold text-subtitle">
                     <div><a href="#">Nome Playlist</a></div>
@@ -49,7 +49,7 @@
                 <div class="user">
                     <a href="#" class="d-flex installa">
                         <img src="img/download.svg" alt="Download" class="download">
-                        <p class="text-gray text-subtitle text-bold">Installa app</p>
+                        <p class="text-subtitle text-bold">Installa app</p>
                     </a>
                     <hr>
                     <div class="profile">
@@ -217,41 +217,46 @@
             <div class="container-footer d-flex justify-between">
                 <div class="d-flex">
                     <img src="img/sinister.jpeg" alt="Sinister">
-                    <div class="d-flex flex-column song-name">
+                    <div class="d-flex flex-column song">
                         <span class="text-white text-subtitle text-bold">Sinister</span>
-                        <span class="text-gray text-subtitle text-bold">Brano Nome</span>
-                        
+                        <span class="text-subtitle text-bold"><a href="" class="song-name">Brano Nome</a></span>
                     </div>
                     <div class="d-flex align-center text-gray icons-brano text-card">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-regular fa-folder"></i>
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-regular fa-folder"></i></a>
                     </div>
                 </div>
                 <div class="d-flex justify-center music-player flex-column">
                     <div class="text-white text-card align-center justify-center d-flex icon-player">
-                        <i class="fa-solid fa-shuffle"></i>
-                        <i class="fa-solid fa-backward"></i>
-                        <i class="fa-regular fa-circle-play"></i>
-                        <i class="fa-solid fa-forward"></i>
-                        <i class="fa-solid fa-rotate-right"></i>
+                        <a href=""><i class="fa-solid fa-shuffle text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-backward text-white"></i></a>
+                        <a href=""><i class="fa-regular fa-circle-play text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-forward text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-rotate-right text-white"></i></a>
                     </div>
-                    <div class="d-flex align-center text-white text-bold text-subtitle">
+                    <div class="d-flex align-center text-white text-bold text-subtitle container-play-bar">
                         <div class="first-min">0:25</div> 
-                    <div class="play-bar">
-                        <div class="bar"></div>
-                    </div>
+                        <div class="play-bar">
+                            <div class="dot-play"></div>
+                            <a href="">
+                                <div class="bar"></div>
+                            </a>
+                        </div>
                         <div class="second-min">4:35</div> 
                     </div>
                 </div>
 
                 <div class="d-flex align-center volume text-white">
                     <div class="icon-volume d-flex">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <i class="fa-solid fa-display"></i>
-                        <i class="fa-solid fa-volume-high"></i>
+                        <a href=""><i class="fa-solid fa-list-ul text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-display text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-volume-high text-white"></i></a>
                     </div>
                     <div class="container-volume-bar">
-                        <div class="volume-bar"></div>
+                        <div class="dot"></div>
+                        <a href="">
+                            <div class="volume-bar"></div>
+                        </a>
                     </div>
                 </div>
             </div>
