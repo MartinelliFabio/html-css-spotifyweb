@@ -1,3 +1,4 @@
+/* ! Utility */
 *,
 *:before,
 *:after {
@@ -21,17 +22,22 @@ body {
     --text-grey: rgba(113, 113, 113, 1);
     --lime-green: rgba(173, 255, 47, 1);
     --subtitle: 0.8rem;
+    --title: 1.5rem;
+    --title-card: 1.1rem;
+    --text-bold: bold;
 }
 
+
+/* ! CSS Globale */
 .wrapper {
     width: 100%;
     height: 100vh;
 }
 
 .container {
-     width: 100%;
-     height: calc(100vh - 95px);
-     display: flex;
+    width: 100%;
+    height: calc(100vh - 95px);
+    display: flex;
 }
 
 .d-flex {
@@ -42,14 +48,61 @@ body {
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .justify-end {
     justify-content: flex-end;
 }
 
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {
+    color: var(--text-white);
+}
+
+/* ! CSS per i vari stili dei testi */
+.text-up { 
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-bold {
+    font-weight: var(--text-bold);
+}
+
+.text-subtitle {
+    font-size: var(--subtitle);
+}
+
+.text-gray {
+    color: var(--text-grey);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+.text-card {
+    font-size: var(--title-card);
+}
+
+
+/* ! Sezione Main Content */
 .main-content {
-     width: calc(100% - 230px);
-     height: 100%;
-     background-color: var(--deep-blue);
+    width: calc(100% - 230px);
+    height: 100%;
+    background-color: var(--deep-blue);
 }
 
 .inner-content {
@@ -57,6 +110,7 @@ body {
     overflow-y: auto;
 }
 
+/* ! Footer */
 .playbar {
     width: 100%;
     height: 95px;
@@ -66,22 +120,24 @@ body {
     z-index: 9999;
 }
 
+
+/* ! Barra Laterale */
 aside {
     width: 230px;
     height: 100%;
     background-color: var(--nero-100);
 }
 
-nav {
-    /* width: 100%; */
-    height: 95px;
+/* ! Nav della parte alta del sito */
+header nav {
+    height: 90px;
     background-color: var(--black-opacity);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    padding-right: 0.5rem;
+    padding-right: 1.8rem;
 }
 
 .btn {
@@ -91,6 +147,68 @@ nav {
     border-radius: 2rem;
     border: 1px solid var(--text-white);
     text-align: center;
-    text-transform: uppercase;
-    font-size: var(--subtitle);
+}
+
+/* ! CSS della Nav sopra le playlists */
+.container-playlist {
+    padding: 1rem 1.5rem;
+}
+
+.inner-content nav {
+    padding-top: 7rem;
+}
+
+ul li {
+    padding: 0 1rem;
+}
+
+/* ! CSS della Sezione Recently Played */
+.recently-played h2 {
+    padding: 2rem 0;
+}
+
+.col {
+    width: calc((100% - 6rem) / 6);
+    margin-right: 1rem;
+}
+
+.title-played span {
+    display: block;
+    text-align: center;
+}
+
+.col img {
+    padding-bottom: 1rem;
+}
+
+.title-played .text-subtitle {
+    padding-top: 0.8rem;
+}
+
+/* ! CSS della Sezione playlists create da Spotify */
+.playlists-created h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.playlists-created p {
+    padding-bottom: 2.5rem;
+}
+
+/* ! CSS della Sezione Artisti più popolari */
+.popular-artists {
+    padding-bottom: 2rem;
+}
+
+.popular-artists h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.popular-artists p {
+    padding-bottom: 2.5rem;
+}
+
+.round-img {
+    border-radius: 50%;
 }
