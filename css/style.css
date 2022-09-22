@@ -156,11 +156,22 @@ aside {
     height: 30px;
 }
 
+.icons-aside hr {
+    height: 35px;
+    margin-left: -1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--lime-green);
+}
+
+.home {
+    padding-left: 0.7rem;
+}
+
 .navigation {
     padding-top: 1.5rem;
 }
 
-.home {
+.icons-aside {
     margin-bottom: 0.5rem;
 }
 
@@ -269,6 +280,12 @@ header nav {
 
 ul li {
     padding: 0 1rem;
+}
+
+.inner-content hr {
+    margin-top: 0.4rem;
+    width: 30px;
+    border: 1px solid var(--lime-green);
 }
 
 /* ! CSS della Sezione Recently Played */
@@ -476,6 +493,7 @@ ul li {
 /* ! CSS Hover del bottone nella Nav (Header) */
 header nav a:hover {
     transform: scale(1.1);
+    color: var(--lime-green);
 }
 
 /* ! CSS Hover delle liste nell' inner-content */
@@ -613,6 +631,14 @@ aside a:hover {
         padding: 0.5rem;
     }
 
+    .icons-aside hr {
+        display: none;
+    }
+
+    .home {
+        padding: 0;
+    }
+
     .logo {
         display: none;
     }
@@ -645,7 +671,7 @@ aside a:hover {
         display: none;
     }
 
-    hr {
+    .user hr {
         display: none;
     }
 
