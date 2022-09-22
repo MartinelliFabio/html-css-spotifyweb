@@ -50,7 +50,7 @@ body {
 }
 
 .flex-row {
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .align-center {
@@ -122,7 +122,7 @@ h2 {
 
 /* ! Sezione Main Content */
 .main-content {
-    width: calc(100% - 230px);
+    width: calc(100% - 250px);
     height: 100%;
     background-color: var(--deep-blue);
 }
@@ -145,6 +145,11 @@ aside {
 
 .logo {
     height: 55px;
+}
+
+.logo-small {
+    height: 30px;
+    display: none;
 }
 
 .sub-logo {
@@ -203,11 +208,11 @@ aside {
 }
 
 .download {
-    height: 1rem;
+    height: 1.5rem;
 }
 
 hr {
-    width: 150%;
+    width: auto;
     border: 0.5px solid var(--text-grey);
 }
 
@@ -345,6 +350,10 @@ ul li {
 }
 
 /* ! CSS del div della parte sinistra, con l'immagine e il nome del brano */
+.brano {
+    width: 33.33%;
+}
+
 .playbar img {
     height: 3.5rem;
 }
@@ -418,12 +427,12 @@ ul li {
 }
 
 .volume {
-    width: 15%;
+    width: 33.33%;
 }
 
 .container-volume-bar {
     height: 4px;
-    width: 100%;
+    width: 33.33%;
     background-color: var(--text-grey);
     border-radius: 1rem;
     position: relative;
@@ -517,4 +526,153 @@ aside a:hover {
 .container-volume-bar:hover .dot {
     display: block;
     cursor: pointer;
+}
+
+/* ! Media Query */
+
+/* ! Tablet md */
+@media screen and (max-width: 992px) {
+    
+    /* ! Sezione inner-content */
+    .col {
+        width: calc((100% - 4rem) / 4);
+        margin-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    ul li {
+        padding: 1rem 1rem;
+    }
+
+    /* ! Sezione "Footer" */
+    .brano {
+        width: 33.33%;
+    }
+
+    .icons-brano {
+        padding-left: 1.5rem;
+    }
+
+    .music-player {
+        width: 33.33%;
+    }
+
+    .volume {
+        width: 33.33%;
+    }
+
+    
+}
+
+/* ! Tablet s */
+@media screen and (max-width: 768px) {
+
+    /* ! Sezione inner-content */
+    .col {
+        width: calc((100% - 2rem) / 2);
+        margin-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    ul li {
+        padding: 1rem 1rem;
+    }
+
+    /* ! Sezione "Footer" */
+    .icons-brano {
+        flex-flow: column wrap;
+        padding-left: 1rem;
+        justify-content: center;
+    }
+
+}
+
+/* ! Tablet xs */
+@media screen and (max-width: 576px) {
+    /* ! Sezione inner-content */
+    .main-content {
+        width: auto;
+    }
+
+    .col {
+        width: calc((100% - 2rem) / 2);
+        margin-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    ul li {
+        padding: 1rem 1rem;
+    }
+
+    /* ! Sezione Barra Laterale (aside) */
+    aside {
+        width: auto;
+        padding: 0.5rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
+    }
+
+    .navigation span {
+        display: none;
+    }
+
+    .playlist  {
+        display: none;
+    }
+    
+    .list {
+        display: none;
+    }
+
+    .user {
+        align-items: center;
+    }
+
+    .user a {
+        padding-bottom: 0.5rem;
+    }
+
+    .installa p {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .profile span {
+        display: none;
+    }
+
+    /* ! Sezione "Footer" */
+    .brano img {
+        height: 2.5rem;
+    }
+
+    .song {
+        padding-left: 0.5rem;
+        width: 20%;
+    }
+
+    .song span {
+        font-size: 0.6rem;
+    }
+
+    .icons-brano {
+        flex-flow: column wrap;
+        padding-left: 1.5rem;
+        justify-content: center;
+    }
+
+    .music-player {
+        padding-right: 2rem;
+        align-content: center;
+    }
+
 }
