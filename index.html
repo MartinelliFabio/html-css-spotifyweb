@@ -17,8 +17,10 @@
 
         <div class="container">
             <!-- Barra Laterale -->
-            <aside>
-                <img src="img/logo.svg" alt="Logo" class="logo">
+            <aside class="d-flex flex-column">
+                <div>
+                    <img src="img/logo.svg" alt="Logo" class="logo">
+                </div>
                 <img src="img/logo-small.svg" alt="Logo Small" class="logo-small">
                 <div class="d-flex flex-column align-start navigation">
                     <div class="d-flex icons-aside align-center text-bold text-subtitle">
@@ -46,10 +48,12 @@
                     <div><a href="#">Nome Playlist</a></div>
                     <div><a href="#">Nome Playlist</a></div>
                     <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
                 </div>
     
                 <div class="user d-flex flex-column">
-                    <a href="#" class="d-flex installa">
+                    <a href="#" class="d-flex installa align-center">
                         <img src="img/download.svg" alt="Download" class="download">
                         <p class="text-subtitle text-bold">Installa app</p>
                     </a>
@@ -218,9 +222,9 @@
         <div class="playbar d-flex align-center">
             <div class="container-footer d-flex justify-between">
                 <div class="d-flex brano align-center">
-                    <img src="img/sinister.jpeg" alt="Sinister">
+                    <a href=""><img src="img/sinister.jpeg" alt="Sinister"></a> 
                     <div class="d-flex flex-column song">
-                        <span class="text-white text-subtitle text-bold">Sinister</span>
+                        <span class="text-white text-subtitle text-bold"><a href="" class="song-name text-white">Sinister</a></span>
                         <span class="text-subtitle text-bold"><a href="" class="song-name">Brano Nome</a></span>
                     </div>
                     <div class="d-flex align-center text-gray icons-brano text-card">
@@ -230,11 +234,11 @@
                 </div>
                 <div class="d-flex justify-center music-player flex-column">
                     <div class="text-white text-card align-center justify-center d-flex icon-player">
-                        <a href=""><i class="fa-solid fa-shuffle text-white"></i></a>
-                        <a href=""><i class="fa-solid fa-backward text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-shuffle icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-backward icons-gray"></i></a>
                         <a href=""><i class="fa-regular fa-circle-play text-white"></i></a>
-                        <a href=""><i class="fa-solid fa-forward text-white"></i></a>
-                        <a href=""><i class="fa-solid fa-rotate-right text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-forward icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-rotate-right icons-gray"></i></a>
                     </div>
                     <div class="d-flex align-center text-white text-bold text-subtitle container-play-bar">
                         <div class="first-min">0:25</div> 
@@ -250,9 +254,9 @@
 
                 <div class="d-flex align-center volume text-white justify-end">
                     <div class="icon-volume d-flex">
-                        <a href=""><i class="fa-solid fa-list-ul text-white"></i></a>
-                        <a href=""><i class="fa-solid fa-display text-white"></i></a>
-                        <a href=""><i class="fa-solid fa-volume-high text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-list-ul icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-display icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-volume-high icons-gray"></i></a>
                     </div>
                     <div class="container-volume-bar">
                         <div class="dot"></div>
