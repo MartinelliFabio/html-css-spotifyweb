@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Spotify - Cerca</title>
+</head>
+<body id="search">
+
+    <div class="wrapper">
+
+        <div class="container">
+            <!-- Barra Laterale -->
+            <aside class="d-flex flex-column">
+                <div>
+                    <img src="../img/logo.svg" alt="Logo" class="logo">
+                </div>
+                <img src="../img/logo-small.svg" alt="Logo Small" class="logo-small">
+                <div class="d-flex flex-column align-start navigation">
+                    <div class="d-flex icons-aside align-center text-bold text-subtitle">
+                        <hr>
+                        <img src="../img/home.svg" alt="HomePage" class="sub-logo home">
+                        <span><a href="../index.html">Home</a></span>
+                    </div>
+                    <div class="d-flex icons-aside align-center text-bold text-subtitle">
+                        <img src="../img/search.svg" alt="Cerca" class="sub-logo">
+                        <span><a href="#">Cerca</a></span>
+                    </div>
+                    <div class="d-flex icons-aside align-center text-bold text-subtitle">
+                        <img src="../img/libreria.svg" alt="La Tua Libreria" class="sub-logo">
+                        <span><a href="">La tua libreria</a></span>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <h3 class="text-white text-up text-card">Playlist</h3>
+                    <span class="d-flex text-gray text-bold"><a href="" class="d-flex align-center"><i class="fa-solid fa-square-plus"></i>Crea Playlist</a></span>
+                </div>
+                <div class="list text-bold text-subtitle">
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                    <div><a href="#">Nome Playlist</a></div>
+                </div>
+    
+                <div class="user d-flex flex-column">
+                    <a href="#" class="d-flex installa align-center">
+                        <img src="../img/download.svg" alt="Download" class="download">
+                        <p class="text-subtitle text-bold">Installa app</p>
+                    </a>
+                    <hr>
+                    <div class="profile">
+                        <a href="#" class="d-flex align-center">
+                            <div class="img-profile">
+                                <img src="../img/profile.svg" alt="Profilo">
+                            </div>
+                            <span class="text-white text-bold">John Doe</span>
+                        </a>
+                    </div>
+                </div>
+                
+            </aside>
+
+            <!-- Sezione con il contenuto principale della pagina -->
+            <section class="main-content">
+
+                <!-- Header con la Nav fixed -->
+                <header>
+
+                    <nav class="d-flex align-center justify-end">
+                        <a href="#" class="btn text-up text-subtitle text-bold">Effettua l&apos;upgrade</a>
+                    </nav>
+
+                </header>
+
+                <!-- Sezione con il contenuto interno della pagina -->
+                <section class="inner-content">
+                    
+                    <!-- Container per la spaziatura delle card -->
+                    <div class="container-playlist">
+
+                        <!-- Sezione Sfoglia tutto -->
+                        <div class="browse-all">
+                            <h2>Sfoglia tutto</h2>
+                            <div class="d-flex flex-row">
+                                <div class="card podcast">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1647881602319-f3e5964bae06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cG9kY2FzdCUyMDEwMHgxMDB8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Podcast</span>
+                                    </div>
+                                </div>
+                                <div class="card for-you">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1624814448280-0f2d7d399b07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bXVzaWMlMjBzcG90aWZ5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Solo per te</span>
+                                    </div>
+                                </div>
+                                <div class="card classifiche">
+                                    <div>
+                                        <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_large.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Classifiche</span>
+                                    </div>
+                                </div>
+                                <div class="card new-song">
+                                    <div>
+                                        <img src="https://assets1.sharedplaylists.cdn.crowds.dk/playlists/bc/c1/34/sz300x300_digital-empire-new-releases-b14b1442fa.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Nuove uscite</span>
+                                    </div>
+                                </div>
+                                <div class="card scopri">
+                                    <div>
+                                        <img src="https://newjams-images.scdn.co/image/ab676477000033ad/dt/v3/discover-weekly/L6MucoZcq9XwufZZxA2PqgAkCgw8nwmEhyfIaDR-CmCBwYuLP8l4BGfbGrB7NaYechrgnVQrELTgIUHfDCFXF0AeVFKlsJpNn6JcpOJfbYA=/NTU6NjI6MzBUNjItNDAtMg==" alt="Playlist Metal" class="img-card">
+                                        <span>Scopri</span>
+                                    </div>
+                                </div>
+                                <div class="card live-event">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1567437361700-c0235d54e5e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGl2ZSUyMGV2ZW50fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Eventi dal vivo</span>
+                                    </div>
+                                </div>
+                                <div class="card summer">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1562122583-eacb4151baa3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1bW1lcnxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Estate</span>
+                                    </div>
+                                </div>
+                                <div class="card pop">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1557180295-76eee20ae8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG9wfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Pop</span>
+                                    </div>
+                                </div>
+                                <div class="card hip-hop">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1583263775534-6fe85549ef89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGlwJTIwaG9wfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Hip Hop</span>
+                                    </div>
+                                </div>
+                                <div class="card mood">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1542157481-f4a5f5ec3406?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG1vb2QlMjBvZmZ8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Mood</span>
+                                    </div>
+                                </div>
+                                <div class="card gaming">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGdhbWluZ3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Gaming</span>
+                                    </div>
+                                </div>
+                                <div class="card indie">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1632131617074-18f395fc76f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aW5kaWV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Indie</span>
+                                    </div>
+                                </div>
+                                <div class="card dance-elettronica">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/cover/609cecfe401824531a049c8573923471/200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Dance &#47; Elettronica</span>
+                                    </div>
+                                </div>
+                                <div class="card latina">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/cover/6c71489ad8a4955848f0864c98b67678/200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Latina</span>
+                                    </div>
+                                </div>
+                                <div class="card autori">
+                                    <div>
+                                        <img src="https://www.sonatori.net/images/ensemble/covers/small/night-music.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Autori</span>
+                                    </div>
+                                </div>
+                                <div class="card r-b">
+                                    <div>
+                                        <img src="https://www.flippermusic.it/copflipper/copertineg/SC_003g.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>R &#38; B</span>
+                                    </div>
+                                </div>
+                                <div class="card equal">
+                                    <div>
+                                        <img src="https://www.broadwayworld.com/ezoimgfmt/cloudimages.broadwayworld.com/columnpiccloud/21646736887.jpg?ezimgfmt=rs:200x200/rscb26/ngcb26/notWebP" alt="Playlist Metal" class="img-card">
+                                        <span>EQUAL</span>
+                                    </div>
+                                </div>
+                                <div class="card rock">
+                                    <div>
+                                        <img src="https://static.vecteezy.com/ti/vettori-gratis/t2/2268146-rock-music-festival-neon-insegne-stile-testo-vettore-gratuito-vettoriale.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Rock</span>
+                                    </div>
+                                </div>
+                                <div class="card allenamento">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/cover/65c86c36aaaea8b7c127dc1e49ed35d6/200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Allenamento</span>
+                                    </div>
+                                </div>
+                                <div class="card radar">
+                                    <div>
+                                        <img src="https://groover-images.s3.eu-west-3.amazonaws.com/prod/influencer/0.music-radar/profile_picture/200_200" alt="Playlist Metal" class="img-card">
+                                        <span>RADAR</span>
+                                    </div>
+                                </div>
+                                <div class="card relax">
+                                    <div>
+                                        <img src="https://p16.resso.me/img/tos-alisg-v-2102/c7850181fecf452285670e4877280edf~c5_200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Relax</span>
+                                    </div>
+                                </div>
+                                <div class="card auto">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/cover/3a0144509549920f2ea22f1e07132c87/200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>In auto</span>
+                                    </div>
+                                </div>
+                                <div class="card anni">
+                                    <div>
+                                        <img src="https://cdn2.albumoftheyear.org/200x/album/518391-borga-revolution-ghanaian-music-in-the-digital-age-1983-1992-volume-1.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Anni</span>
+                                    </div>
+                                </div>
+                                <div class="card pride">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/cover/70c88b0084e2a75e0800d5532b5670db/200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Pride</span>
+                                    </div>
+                                </div>
+                                <div class="card family">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/cover/072acfbb4efce61bdf10920d2036cbae/200x200.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Bambini e famiglia</span>
+                                    </div>
+                                </div>
+                                <div class="card benessere">
+                                    <div>
+                                        <img src="https://img.wynk.in/unsafe/200x200/filters:no_upscale():format(jpg)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_hungama/music/0675804718033/1623745218/srch_hungama_67014431.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Benessere</span>
+                                    </div>
+                                </div>
+                                <div class="card soul">
+                                    <div>
+                                        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/165/232/small/James_Brown_Pop_Art_Free_Vector.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Soul</span>
+                                    </div>
+                                </div>
+                                <div class="card alternative">
+                                    <div>
+                                        <img src="https://thealtnation.files.wordpress.com/2022/02/logo.jpg?w=200" alt="Playlist Metal" class="img-card">
+                                        <span>Alternative</span>
+                                    </div>
+                                </div>
+                                <div class="card casa">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>A casa</span>
+                                    </div>
+                                </div>
+                                <div class="card dormire">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1526785033379-75ba86cfacf6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2glMjBzbGVlcHxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Dormire</span>
+                                    </div>
+                                </div>
+                                <div class="card caraibi">
+                                    <div>
+                                        <img src="https://cdns-images.dzcdn.net/images/artist/d74d96a8e35b2910d0d5d2ab3806088d/264x264.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Caraibi</span>
+                                    </div>
+                                </div>
+                                <div class="card jazz">
+                                    <div>
+                                        <img src="https://static.vecteezy.com/ti/vettori-gratis/t2/259472-vettore-del-manifesto-di-musica-vettoriale.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Jazz</span>
+                                    </div>
+                                </div>
+                                <div class="card sanremo">
+                                    <div>
+                                        <img src="https://www.toptesti.it/images/artisti/57966.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Sanremo 2022</span>
+                                    </div>
+                                </div>
+                                <div class="card folk">
+                                    <div>
+                                        <img src="https://www.bananamusic.it/c/1370-category_default/chitarre-acustiche-elettrificate.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Folk &#38; Acustica</span>
+                                    </div>
+                                </div>
+                                <div class="card focus">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1617191519105-d07b98b10de6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRlZXAlMjBmb2N1c3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Focus</span>
+                                    </div>
+                                </div>
+                                <div class="card strumentale">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1524650359799-842906ca1c06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5zdHJ1bWVudGFsJTIwbXVzaWN8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Strumentale</span>
+                                    </div>
+                                </div>
+                                <div class="card party">
+                                    <div>
+                                        <img src="https://images.unsplash.com/photo-1571839154183-6bb84a567903?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBhcnR5fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Playlist Metal" class="img-card">
+                                        <span>Party</span>
+                                    </div>
+                                </div>
+                                <div class="card afro">
+                                    <div>
+                                        <img src="https://static.vecteezy.com/system/resources/thumbnails/010/263/198/small/afro-music-logo-design-vector.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Afro</span>
+                                    </div>
+                                </div>
+                                <div class="card viaggi">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f000000036906e3e07bd1de92c8a6fb08" alt="Playlist Metal" class="img-card">
+                                        <span>Viaggi</span>
+                                    </div>
+                                </div>
+                                <div class="card classica">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f000000039359824c18e52c3f5464926c" alt="Playlist Metal" class="img-card">
+                                        <span>Classica</span>
+                                    </div>
+                                </div>
+                                <div class="card lol">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67616d0000b273e79c051bb5ccb3934b4ca42b" alt="Playlist Metal" class="img-card">
+                                        <span>League of Legends</span>
+                                    </div>
+                                </div>
+                                <div class="card metal">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f000000031e192cf416d6921f47a0eae4" alt="Playlist Metal" class="img-card">
+                                        <span>Metal</span>
+                                    </div>
+                                </div>
+                                <div class="card tastemaker">
+                                    <div>
+                                        <img src="https://pbs.twimg.com/media/EoQW1bOXEAElF0s.jpg" alt="Playlist Metal" class="img-card">
+                                        <span>Tastemaker</span>
+                                    </div>
+                                </div>
+                                <div class="card funk">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f00000003e0113d1b6e16f0813877a9f9" alt="Playlist Metal" class="img-card">
+                                        <span>Funk</span>
+                                    </div>
+                                </div>
+                                <div class="card punk">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f0000000329a4e56ea2f6e2c6d4436d6c" alt="Playlist Metal" class="img-card">
+                                        <span>Punk</span>
+                                    </div>
+                                </div>
+                                <div class="card ambient">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f0000000319ab577207bd9e19375deb6b" alt="Playlist Metal" class="img-card">
+                                        <span>Ambient</span>
+                                    </div>
+                                </div>
+                                <div class="card k-pop">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f000000036feebcd31e90097394664e9e" alt="Playlist Metal" class="img-card">
+                                        <span>K-pop</span>
+                                    </div>
+                                </div>
+                                <div class="card blues">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f00000003e8d2d867e32fdaa12aa79d57" alt="Playlist Metal" class="img-card">
+                                        <span>Blues</span>
+                                    </div>
+                                </div>
+                                <div class="card country">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67706f000000031416f67f937b9ee33b3753e2" alt="Playlist Metal" class="img-card">
+                                        <span>Country</span>
+                                    </div>
+                                </div>
+                                <div class="card frequency">
+                                    <div>
+                                        <img src="https://d3nqdsuv3agd2n.cloudfront.net/eyJidWNrZXQiOiJzdWJtaXRodWIiLCJrZXkiOiJpbWFnZXMvb3JpZ2luYWwvNVd4RzY4dmV1dXhTd1d4NkEvMTU2NjI4NzI4MDI1Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOiIzMDAiLCJoZWlnaHQiOiIzMDAiLCJmaXQiOiJjb3ZlciJ9fX0=" alt="Playlist Metal" class="img-card">
+                                        <span>Frequency</span>
+                                    </div>
+                                </div>
+                                <div class="card arabo">
+                                    <div>
+                                        <img src="https://i.scdn.co/image/ab67616d00001e021b0fef5da88d1372814b2b28" alt="Playlist Metal" class="img-card">
+                                        <span>Arabo</span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+        </div>
+
+        <!-- Sezione "Footer" -->
+        <div class="playbar d-flex align-center">
+            <div class="container-footer d-flex justify-between">
+                <div class="d-flex brano align-center">
+                    <a href=""><img src="../img/sinister.jpeg" alt="Sinister"></a> 
+                    <div class="d-flex flex-column song">
+                        <span class="text-white text-subtitle text-bold"><a href="" class="song-name text-white">Sinister</a></span>
+                        <span class="text-subtitle text-bold"><a href="" class="song-name">Brano Nome</a></span>
+                    </div>
+                    <div class="d-flex align-center text-gray icons-brano text-card">
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                        <a href=""><i class="fa-regular fa-folder"></i></a>
+                    </div>
+                </div>
+                <div class="d-flex justify-center music-player flex-column">
+                    <div class="text-white text-card align-center justify-center d-flex icon-player">
+                        <a href=""><i class="fa-solid fa-shuffle icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-backward icons-gray"></i></a>
+                        <a href=""><i class="fa-regular fa-circle-play text-white"></i></a>
+                        <a href=""><i class="fa-solid fa-forward icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-rotate-right icons-gray"></i></a>
+                    </div>
+                    <div class="d-flex align-center text-white text-bold text-subtitle container-play-bar">
+                        <div class="first-min">0:25</div> 
+                        <div class="play-bar">
+                            <div class="dot-play"></div>
+                            <a href="">
+                                <div class="bar"></div>
+                            </a>
+                        </div>
+                        <div class="second-min">4:35</div> 
+                    </div>
+                </div>
+
+                <div class="d-flex align-center volume text-white justify-end">
+                    <div class="icon-volume d-flex">
+                        <a href=""><i class="fa-solid fa-list-ul icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-display icons-gray"></i></a>
+                        <a href=""><i class="fa-solid fa-volume-high icons-gray"></i></a>
+                    </div>
+                    <div class="container-volume-bar">
+                        <div class="dot"></div>
+                        <a href="">
+                            <div class="volume-bar"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+</body>
+</html>
