@@ -841,6 +841,7 @@ aside a:hover {
     cursor: pointer;
     border-radius: 8px;
     overflow: hidden;
+    transition: .3s;
 }
 
 #search .card:after{
@@ -1070,6 +1071,15 @@ aside a:hover {
 .arabo {
     background-color: var(--lilla-1);
 }
+
+/* ! CSS degli effetti della pagina Cerca */
+#search .card:hover {
+    border-radius: 50px;
+    filter: opacity(90%);
+}
+
+
+
 
 /* ! Media Query della pagina Cerca */
 @media screen and (max-width: 1400px) {
