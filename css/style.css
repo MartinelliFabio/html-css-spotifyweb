@@ -20,7 +20,7 @@ body {
     --dark-grey: rgba(40, 40, 40, 1);
     --text-white: rgba(255, 255, 255, 1);
     --text-grey: rgba(113, 113, 113, 1);
-    --lime-green: rgba(173, 255, 47, 1);
+    --lime-green: #57ff27;
     --gray-bar: #c1c1c1;
     --icons: rgb(192, 192, 192);
     --subtitle: 0.8rem;
@@ -134,12 +134,26 @@ h2 {
 .main-content {
     width: calc(100% - 250px);
     height: 100%;
-    background-color: var(--deep-blue);
 }
 
 .inner-content {
     height: 100%;
     overflow-y: auto;
+    background: linear-gradient(-45deg, var(--deep-blue), var(--deep-blue), #155f00);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* ! Webkit per personalizzare la barra di scorrimento */
@@ -162,7 +176,7 @@ h2 {
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #619b0a; 
+    background: #57ff27; 
   }
 
 /* ! Barra Laterale */
@@ -585,6 +599,7 @@ aside a:hover {
 
 .music-player .fa-circle-play:hover {
     transform: scale(1.1);
+    color: var(--lime-green);
 }
 
 .play-bar:hover .bar {
